@@ -22,13 +22,9 @@ class SDL_Pi_GrovePowerSave:
 
 		GPIO.setup(self._GPIOPin,GPIO.OUT, initial=self._initialState)
 
-	def turnOnPowerSave(self):
+	def setPowerSave(self, value):
 
-		GPIO.output(self._GPIOPin, True)
-
-	def turnOffPowerSave(self):
-
-		GPIO.output(self._GPIOPin, False)
+		GPIO.output(self._GPIOPin, value)
 
 
 		

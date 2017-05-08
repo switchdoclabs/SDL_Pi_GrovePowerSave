@@ -18,13 +18,13 @@ GPIO_Pin_PowerSave = 4
 myPowerSave = SDL_Pi_GrovePowerSave.SDL_Pi_GrovePowerSave(GPIO_Pin_PowerSave, True)
 	
 print "turning Pin %i off" % GPIO_Pin_PowerSave
-myPowerSave.turnOffPowerSave()
+myPowerSave.setPowerSave(False)
 
 time.sleep(60)
 
-myPowerSave.turnOnPowerSave()
+myPowerSave.setPowerSave(True)
 
-print "turning Pin %i off" % GPIO_Pin_PowerSave
+print "turning Pin %i on" % GPIO_Pin_PowerSave
 
 
 		
